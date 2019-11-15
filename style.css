@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to right, #000, #121212);
+    color: #eee;
+    display: grid;
+    grid-template-columns: auto 30%;
+    font-family: sans-serif;
+}
+
+.content {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+}
+
+main {
+    margin-left: 20%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+main .content {
+    width: 70%;
+}
+
+    main .content h1 {
+        font-size: 3rem;
+        position: relative;
+    }
+
+        main .content h1 span {
+            display: block;
+        }
+
+        main .content h1 span:nth-child(1) {
+            color: red;
+            font-size: 4rem;
+        }
+        
+        main .content h1 p {
+            font-size: 1.2rem;
+            width: 80%;
+            line-height: 1.7rem;
+            margin-bottom: 2rem;
+        }
+
+aside {
+    background: url('img/vidic.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+img {
+    width: 30%;
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    transform: rotate(-15deg);
+}
+
+a {
+    display: inline-block;
+    background: red;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem;
+}
